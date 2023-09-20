@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>BURGER ROYALE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, h3, p, ul, li, form {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Center-align all content */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #f4f4f4;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+        }
+
+        /* Additional CSS for navigation */
+        header nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 40px 0;
+        }
+
+        header nav ul li {
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        header nav ul li a:hover {
+            color: #ddd;
+        }
+
+        /* Additional CSS for font */
+        .menu-item h3 {
+            font-size: 1.5em;
+        }
+
+        /* Additional CSS for sections */
+        .section {
+            margin: 20px 0;
+            opacity: 0;
+            animation: fade-in 1s ease-in-out forwards;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Additional CSS for form */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Additional CSS for footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+
+        footer p {
+            font-size: 1.2em;
+        }
+
+        /* Additional CSS for decorative elements */
+        .divider {
+            width: 100%;
+            height: 20px;
+            background-color: #333;
+        }
+
+        .wave {
+            width: 100%;
+            height: 100px;
+            background-image: url('wave.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .wave-bottom {
+            transform: scaleY(-1);
+        }
+
+        /* Additional CSS for images and animations */
+        .menu-item img {
+            max-width: 20%;
+            height: auto;
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        .menu-item img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>DELICIOUS BURGER</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="wave"></div>
+
+    <section class="hero section">
+        <img src="F:\burgers\banner.jpg" alt="Burger Royale">
+        <h2>Welcome to Delicious Burger</h2>
+        <p>Delicious burgers, fries, and more!</p>
+    </section>
+
+    <div class="wave wave-bottom"></div>
+
+    <section class="menu section">
+        <h2>Menu</h2>
+        <div class="menu-item">
+            <img src="C:\Users\gnimt\Downloads\pngwing.com (10).png" alt="Burger 1">
+            <h3>Burger Supreme</h3>
+            <p>Our classic burger with all the toppings.</p>
+        </div>
+        <div class="menu-item">
+            <img src="C:\Users\gnimt\Downloads\pngwing.com (4).png" alt="Burger 2">
+            <h3>Spicy Chicken Burger</h3>
+            <p>For those who like a little kick.</p>
+        </div>
+        <div class="menu-item">
+            <img src="C:\Users\gnimt\Downloads\pngwing.com (6).png" alt="Burger 3">
+            <h3>Cheeseburger Deluxe</h3>
+            <p>A burger fit for royalty with extra cheese.</p>
+        </div>
+        <div class="menu-item">
+            <img src="C:\Users\gnimt\Downloads\pngwing.com (8).png" alt="Fries">
+            <h3>Golden Fries</h3>
+            <p>Thin and crispy fries, just the way you like them.</p>
+        </div>
+        <div class="menu-item">
+            <img src="C:\Users\gnimt\Downloads\pngegg.png" alt="Ice Cream">
+            <h3>Vanilla Ice Cream</h3>
+            <p>Creamy and rich, the perfect dessert.</p>
+        </div>
+        <div class="menu-item">
+            <img src="C:\Users\gnimt\Downloads\pngegg (1).png" alt="Soft Drink">
+            <h3>Cola</h3>
+            <p>Classic carbonated beverage to quench your thirst.</p>
+        </div>
+        <div class="menu-item">
+            <img src="C:\Users\gnimt\Downloads\pngwing.com (7).png"alt="Milkshake">
+            <h3>Chocolate Milkshake</h3>
+            <p>Indulge in our velvety smooth chocolate shake.</p>
+        </div>
+        <div class="menu-item">
+            <img src="C:\Users\gnimt\Downloads\frozen-yogurt-smoothie-milkshake-strawberry-juice-health-shake-strawberry-drink-790655de85ce6f62fbf81b7139eb4b3c.png" alt="Milkshake 2">
+            <h3>Strawberry Milkshake</h3>
+            <p>Fresh strawberries blended to perfection.</p>
+        </div>
+        <!-- Add more menu items as needed -->
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="locations section">
+        <h2>Locations</h2>
+        <p>Find a Delicious Burger near you!</p>
+        <div class="location">
+            <h3>Location 1</h3>
+            <p>Address: Sat Paul Mittal Road, Sarabha Nagar,Ludhiana</p>
+            <p>Phone: 0161-5062313</p>
+        </div>
+        <div class="location">
+            <h3>Location 2</h3>
+            <p>Address:Dugri, Urban Estate, Phase-1, Ludhiana</p>
+            <p>Phone: 072080-74353</p>
+        </div>
+        <!-- Add more locations as needed -->
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="contact section">
+        <h2>Contact Us</h2>
+        <p>Have a question or feedback? Reach out to us!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <div class="wave wave-bottom"></div>
+
+    <footer>
+        <p>&copy; 2023 Burger Royale</p>
+    </footer>
+</body>
+
+</html>
